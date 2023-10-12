@@ -114067,104 +114067,6 @@ SkinnedMeshRenderer:
     m_Center: {x: 9.313226e-10, y: -0.00007485878, z: 0.0005959859}
     m_Extent: {x: 0.009766481, y: 0.010514508, z: 0.0052707912}
   m_DirtyAABB: 0
---- !u!1001 &2143711288
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 520331537538784237, guid: ab87920b4ee7f7849a687b3e742878c5,
-        type: 3}
-      propertyPath: m_Name
-      value: Slider
-      objectReference: {fileID: 0}
-    - target: {fileID: 520331537538784239, guid: ab87920b4ee7f7849a687b3e742878c5,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 520331537538784239, guid: ab87920b4ee7f7849a687b3e742878c5,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 24.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 520331537538784239, guid: ab87920b4ee7f7849a687b3e742878c5,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -32.34
-      objectReference: {fileID: 0}
-    - target: {fileID: 520331537538784239, guid: ab87920b4ee7f7849a687b3e742878c5,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 520331537538784239, guid: ab87920b4ee7f7849a687b3e742878c5,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 520331537538784239, guid: ab87920b4ee7f7849a687b3e742878c5,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 520331537538784239, guid: ab87920b4ee7f7849a687b3e742878c5,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 520331537538784239, guid: ab87920b4ee7f7849a687b3e742878c5,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 520331537538784239, guid: ab87920b4ee7f7849a687b3e742878c5,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 520331537538784239, guid: ab87920b4ee7f7849a687b3e742878c5,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 520331537538784237, guid: ab87920b4ee7f7849a687b3e742878c5,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2143711290}
-  m_SourcePrefab: {fileID: 100100000, guid: ab87920b4ee7f7849a687b3e742878c5, type: 3}
---- !u!1 &2143711289 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 520331537538784237, guid: ab87920b4ee7f7849a687b3e742878c5,
-    type: 3}
-  m_PrefabInstance: {fileID: 2143711288}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2143711290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2143711289}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fe7247a4e987d74cb6a5f677a97bf42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameObjectToManipulate: {fileID: 913522713}
-  PositiveVariableTypes: 5
-  NegativeVariableTypes: 2
-  MinValueForPositive: 100
-  MaxValueForPositive: 1000
-  MinValueForNegative: 1
-  MaxValueForNegative: 10
-  RelativeToInitialValue: 0
 --- !u!1 &1007261863756703
 GameObject:
   m_ObjectHideFlags: 0
@@ -115406,12 +115308,12 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0
+    y: 0.5
     width: 1
     height: 1
   near clip plane: 0.1
   far clip plane: 5000
-  field of view: 38
+  field of view: 23
   orthographic: 0
   orthographic size: 10
   m_Depth: 1
@@ -122236,4 +122138,3 @@ SceneRoots:
   - {fileID: 265124614}
   - {fileID: 1303206483}
   - {fileID: 713527211}
-  - {fileID: 2143711288}
