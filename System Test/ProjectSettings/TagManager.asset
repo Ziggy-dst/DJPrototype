@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - World
   - NoMask
+  - PlayerBullet
   layers:
   - Default
   - TransparentFX
