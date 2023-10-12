@@ -5,11 +5,11 @@ using UnityEngine;
 public class EnemyGeneration : MonoBehaviour
 {
     [SerializeField] private GameObject[] enemyPrefab; // 敌人的Prefab
-    [SerializeField] private float spawnRate = 5f; // 生成敌人的频率（秒）
     [SerializeField] private Vector3 minSpawnPosition; // 生成区域的最小坐标
     [SerializeField] private Vector3 maxSpawnPosition; // 生成区域的最大坐标
 
     public int maxEnemyNumber;
+    public float spawnRate = 5f; // 生成敌人的频率（秒）
 
     private float timeSinceLastSpawn = 0f; // 距离上次生成敌人的时间
 

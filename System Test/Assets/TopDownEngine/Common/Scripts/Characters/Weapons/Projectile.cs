@@ -117,7 +117,7 @@ namespace MoreMountains.TopDownEngine
 		/// </summary>
 		protected virtual void Initialization()
 		{
-			Speed = _initialSpeed;
+			// Speed = _initialSpeed;
 			ProjectileIsFacingRight = _facingRightInitially;
 			if (_spriteRenderer != null) {	_spriteRenderer.flipX = _initialFlipX;	}
 			transform.localScale = _initialLocalScale;	
