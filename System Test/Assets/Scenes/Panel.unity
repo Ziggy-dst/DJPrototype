@@ -262,6 +262,11 @@ PrefabInstance:
       propertyPath: AmountMoved
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2711243412085641855, guid: 65be3bcb26672234089a545e028441ac,
+        type: 3}
+      propertyPath: initialValue
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2561843935338905845, guid: 65be3bcb26672234089a545e028441ac, type: 3}
     m_RemovedGameObjects: []
@@ -35713,6 +35718,11 @@ PrefabInstance:
         type: 3}
       propertyPath: AmountMoved
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2711243412085641855, guid: 65be3bcb26672234089a545e028441ac,
+        type: 3}
+      propertyPath: initialValue
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2561843935338905845, guid: 65be3bcb26672234089a545e028441ac, type: 3}
@@ -81623,6 +81633,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6587109247887480442, guid: a9deee4043e4f0d4fb41817a77875e6a,
         type: 3}
+      propertyPath: initialValue
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587109247887480442, guid: a9deee4043e4f0d4fb41817a77875e6a,
+        type: 3}
       propertyPath: AmountRotated
       value: -30
       objectReference: {fileID: 0}
@@ -105130,6 +105145,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6587109247887480442, guid: a9deee4043e4f0d4fb41817a77875e6a,
         type: 3}
+      propertyPath: initialValue
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6587109247887480442, guid: a9deee4043e4f0d4fb41817a77875e6a,
+        type: 3}
       propertyPath: AmountRotated
       value: -30
       objectReference: {fileID: 0}
@@ -111410,6 +111430,11 @@ PrefabInstance:
         type: 3}
       propertyPath: AmountMoved
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2711243412085641855, guid: 65be3bcb26672234089a545e028441ac,
+        type: 3}
+      propertyPath: initialValue
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2561843935338905845, guid: 65be3bcb26672234089a545e028441ac, type: 3}

@@ -32,6 +32,8 @@ namespace KnobsAsset
 
         protected Transform handle;
 
+        public float initialValue;
+
         protected virtual void Start()
         {
             // Get references to all KnobListeners that this knob will call to update
@@ -49,6 +51,7 @@ namespace KnobsAsset
                 return;
             }
             baseScale = handle.localScale;
+            SetValue(initialValue);
         }
 
         /// <summary>
