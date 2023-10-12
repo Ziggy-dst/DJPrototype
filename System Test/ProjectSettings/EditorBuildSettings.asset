@@ -93,7 +93,7 @@ EditorBuildSettings:
     path: Assets/TopDownEngine/Demos/Tanks/Tanks.unity
     guid: b2c3deca14b3c0645bb90e29059dd328
   - enabled: 1
-    path: Assets/TopDownEngine/Demos/Colonel/Colonel.unity
+    path: Assets/Scenes/EnemyGeneration.unity
     guid: 7a42340ee81c11b40a381cee4cacf3c9
   - enabled: 1
     path: Assets/TopDownEngine/Demos/Deadline/Deadline.unity
