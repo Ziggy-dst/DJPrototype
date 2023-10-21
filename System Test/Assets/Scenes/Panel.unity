@@ -305,8 +305,8 @@ MonoBehaviour:
   PositiveVariableTypes: 3
   NegativeVariableTypes: 5
   MinValueForPositive: 0
-  MaxValueForPositive: 5
-  MinValueForNegative: 100
+  MaxValueForPositive: 10
+  MinValueForNegative: 50
   MaxValueForNegative: 1000
   RelativeToInitialValue: 0
 --- !u!114 &3230718 stripped
@@ -1819,6 +1819,115 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fec8eb194a523854fa2120af773404e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &132179456
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 580063357836388670, guid: a95c2b8b8d95944bf91436bc81bdd0f6,
+        type: 3}
+      propertyPath: InitialHealth
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 580063357836388670, guid: a95c2b8b8d95944bf91436bc81bdd0f6,
+        type: 3}
+      propertyPath: MaximumHealth
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 580381667226706224, guid: a95c2b8b8d95944bf91436bc81bdd0f6,
+        type: 3}
+      propertyPath: InitialWeapon
+      value: 
+      objectReference: {fileID: 114277323309942634, guid: c91d2542346699944b0b1922ce84c08d,
+        type: 3}
+    - target: {fileID: 580584327367380520, guid: a95c2b8b8d95944bf91436bc81bdd0f6,
+        type: 3}
+      propertyPath: WalkSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 690231315563547048, guid: a95c2b8b8d95944bf91436bc81bdd0f6,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 690231315563547048, guid: a95c2b8b8d95944bf91436bc81bdd0f6,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 690231315563547048, guid: a95c2b8b8d95944bf91436bc81bdd0f6,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 690231315563547048, guid: a95c2b8b8d95944bf91436bc81bdd0f6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.0382361
+      objectReference: {fileID: 0}
+    - target: {fileID: 690231315563547048, guid: a95c2b8b8d95944bf91436bc81bdd0f6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.00000047683716
+      objectReference: {fileID: 0}
+    - target: {fileID: 690231315563547048, guid: a95c2b8b8d95944bf91436bc81bdd0f6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -18.677067
+      objectReference: {fileID: 0}
+    - target: {fileID: 690231315563547048, guid: a95c2b8b8d95944bf91436bc81bdd0f6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 690231315563547048, guid: a95c2b8b8d95944bf91436bc81bdd0f6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 690231315563547048, guid: a95c2b8b8d95944bf91436bc81bdd0f6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 690231315563547048, guid: a95c2b8b8d95944bf91436bc81bdd0f6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 690231315563547048, guid: a95c2b8b8d95944bf91436bc81bdd0f6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 690231315563547048, guid: a95c2b8b8d95944bf91436bc81bdd0f6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 690231315563547048, guid: a95c2b8b8d95944bf91436bc81bdd0f6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 690231315563547048, guid: a95c2b8b8d95944bf91436bc81bdd0f6,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 692724264497407054, guid: a95c2b8b8d95944bf91436bc81bdd0f6,
+        type: 3}
+      propertyPath: m_Name
+      value: GiantPatrolConeSeekAndDestroyAI
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a95c2b8b8d95944bf91436bc81bdd0f6, type: 3}
 --- !u!1 &133004457
 GameObject:
   m_ObjectHideFlags: 0
@@ -35762,9 +35871,9 @@ MonoBehaviour:
   PositiveVariableTypes: 2
   NegativeVariableTypes: 4
   MinValueForPositive: 1
-  MaxValueForPositive: 25
+  MaxValueForPositive: 50
   MinValueForNegative: 3
-  MaxValueForNegative: 0.1
+  MaxValueForNegative: 0.01
   RelativeToInitialValue: 0
 --- !u!114 &701758208 stripped
 MonoBehaviour:
@@ -125624,3 +125733,4 @@ SceneRoots:
   - {fileID: 713527211}
   - {fileID: 1472599813}
   - {fileID: 697639870}
+  - {fileID: 132179456}
