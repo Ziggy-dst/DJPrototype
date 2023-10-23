@@ -118,7 +118,7 @@ namespace KnobsAsset
                     {
                         foreach (var bulletProjectile in playerBulletInstanceProjectiles)
                         {
-                            bulletProjectile.GetComponent<Projectile>().Speed = positiveVariableValue + (RelativeToInitialValue ? initialDamagePerBullet : 0);
+                            bulletProjectile.GetComponent<Projectile>().Speed = positiveVariableValue + (RelativeToInitialValue ? initialBulletSpeed : 0);
                         }
                     }
                     break;

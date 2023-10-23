@@ -52,6 +52,7 @@ namespace KnobsAsset
             }
             baseScale = handle.localScale;
             SetValue(initialValue);
+            OnValueChanged(initialValue);
         }
 
         /// <summary>
@@ -66,7 +67,6 @@ namespace KnobsAsset
                 return;
             }
             SetKnobPosition(percentValue);
-            OnValueChanged(percentValue);
         }
 
         protected abstract void SetKnobPosition(float percentValue);

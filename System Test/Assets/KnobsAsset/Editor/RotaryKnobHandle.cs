@@ -7,7 +7,7 @@ namespace KnobsAsset
     /// Shows handles in the editor window to show a rotary knob's minimum angle, range of motion and current rotation value
     /// </summary>
     [CustomEditor(typeof(RotaryKnob))]
-    public class RotaryKnobHandle : Editor
+    public class RotaryKnobHandle : UnityEditor.Editor
     {
         void OnSceneGUI()
         {

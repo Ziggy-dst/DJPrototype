@@ -7,7 +7,7 @@ namespace KnobsAsset
     /// Shows handles in the editor window to show a slider knob's minimum position, range of motion and current position value
     /// </summary>
     [CustomEditor(typeof(SliderKnob))]
-    public class SliderKnobHandle : Editor
+    public class SliderKnobHandle : UnityEditor.Editor
     {
         void OnSceneGUI()
         {
