@@ -21,7 +21,7 @@ namespace KnobsAsset
         
         [Header("Paired Knob")]
         [Tooltip("The knob this slider is connected to")]
-        [SerializeField] private SliderPairKnob pairedKnob = null;
+        public SliderPairKnob pairedKnob = null;
 
         protected override void Start()
         {
@@ -47,35 +47,49 @@ namespace KnobsAsset
 
         private void Update()
         {
-            if (pairedKnob != null)
+            if (!EditManager.isEditing)
             {
-                if (grabbed)
+                if (pairedKnob != null)
                 {
-                    // check how much to move based on mouse position
-                    Vector3 mousePos = MousePositionOnRelativePlane();// - grabbedMouseOffset;
-                    Vector3 mousePosOnAxis = PositionOnXAxisClosestToPoint(mousePos);
-                    float distance = Vector3.Distance(mousePosOnAxis, handle.position);
-                    float dot = Vector3.Dot(transform.forward, mousePosOnAxis - handle.position); // dot product is -1 when vectors point in opposite directions
-                    AmountMoved += (distance * (dot < 0f ? -1f : 1f));
+                    if (grabbed)
+                    {
+                        // check how much to move based on mouse position
+                        Vector3 mousePos = MousePositionOnRelativePlane();// - grabbedMouseOffset;
+                        Vector3 mousePosOnAxis = PositionOnXAxisClosestToPoint(mousePos);
+                        float distance = Vector3.Distance(mousePosOnAxis, handle.position);
+                        float dot = Vector3.Dot(transform.forward, mousePosOnAxis - handle.position); // dot product is -1 when vectors point in opposite directions
+                        AmountMoved += (distance * (dot < 0f ? -1f : 1f));
 
-                    // clamp position to position range
-                    AmountMoved = Mathf.Clamp(AmountMoved, 0f, MovementRange);
-                    // pairedKnob.AmountMoved = Mathf.Clamp(-AmountMoved, 0f, pairedKnob.MovementRange);
+                        // clamp position to position range
+                        AmountMoved = Mathf.Clamp(AmountMoved, 0f, MovementRange);
+                        // pairedKnob.AmountMoved = Mathf.Clamp(-AmountMoved, 0f, pairedKnob.MovementRange);
 
-                    // set the position of the transform based on position
-                    SetPositionBasedOnAmountMoved();
-                    SetPairedKnobPositionBasedOnAmountMoved();
+                        // set the position of the transform based on position
+                        SetPositionBasedOnAmountMoved();
+                        SetPairedKnobPositionBasedOnAmountMoved();
 
-                    // propagate the changed knob value to listeners
-                    float positionPercentage = AmountMoved / MovementRange;
-                    OnValueChanged(positionPercentage);
-                    pairedKnob.OnValueChanged(1 - positionPercentage);
+                        // propagate the changed knob value to listeners
+                        float positionPercentage = AmountMoved / MovementRange;
+                        OnValueChanged(positionPercentage);
+                        pairedKnob.OnValueChanged(1 - positionPercentage);
+                    }
+                }
+                else
+                {
+                    //Not Paired UI Warning
                 }
             }
-            else
+
+            if (pairedKnob == null)
             {
-                //Not Paired UI Warning
+                ResetKnob();
             }
+        }
+
+        public void ResetKnob()
+        {
+            OnValueChanged(initialValue);
+            SetKnobPosition(initialValue);
         }
 
         protected override void SetKnobPosition(float percentValue)

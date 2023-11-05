@@ -10,6 +10,7 @@ TagManager:
   - World
   - NoMask
   - PlayerBullet
+  - Module
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Post Process
   - 
   - Obstacles
   - Ground
