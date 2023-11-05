@@ -29,6 +29,7 @@ public class Draggable : MonoBehaviour
             if (plane.Raycast(ray, out float hitDist))
             {
                 Vector3 targetPoint = ray.GetPoint(hitDist);
+                // Vector3 cursorOffset = targetPoint
                 transform.position = targetPoint;
             }
         }
