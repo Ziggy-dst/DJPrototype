@@ -8,6 +8,7 @@ public class Draggable : MonoBehaviour
     public bool isDragging;
     public bool isOverlapping;
     private Vector3 posBeforeDragging;
+    private Vector3 cursorOffset;
     private Rigidbody rb;
     
     void Start()
@@ -29,8 +30,7 @@ public class Draggable : MonoBehaviour
             if (plane.Raycast(ray, out float hitDist))
             {
                 Vector3 targetPoint = ray.GetPoint(hitDist);
-                // Vector3 cursorOffset = targetPoint
-                transform.position = targetPoint;
+                transform.position = targetPoint - cursorOffset;
             }
         }
     }
@@ -40,6 +40,14 @@ public class Draggable : MonoBehaviour
         if (EditManager.isEditing)
         {
             isDragging = true;
+            Plane plane = new Plane(transform.up, transform.position);
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (plane.Raycast(ray, out float hitDist))
+            {
+                Vector3 targetPoint = ray.GetPoint(hitDist);
+                Vector3 cursorRawOffset = targetPoint - posBeforeDragging;
+                cursorOffset = new Vector3(cursorRawOffset.x, 0, cursorRawOffset.z);
+            }
         }
     }
 
