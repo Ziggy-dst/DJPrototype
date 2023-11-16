@@ -11225,7 +11225,7 @@ GameObject:
   - component: {fileID: 5383390687224973845}
   - component: {fileID: 7681872512708046298}
   - component: {fileID: 9130120773282675161}
-  - component: {fileID: 8553864887714578426}
+  - component: {fileID: 2844687771115873357}
   m_Layer: 13
   m_Name: Sniper
   m_TagString: Enemy
@@ -11788,8 +11788,8 @@ MonoBehaviour:
   ImmuneToKnockback: 0
   ImmuneToKnockbackIfZeroDamage: 0
   KnockbackForceMultiplier: 1
-  DestroyOnDeath: 1
-  DelayBeforeDestruction: 3
+  DestroyOnDeath: 0
+  DelayBeforeDestruction: 0
   PointsWhenDestroyed: 0
   RespawnAtInitialLocation: 0
   DisableControllerOnDeath: 1
@@ -11925,6 +11925,7 @@ MonoBehaviour:
   LockHandlesOnXAxis: 0
   LockHandlesOnYAxis: 0
   LockHandlesOnZAxis: 0
+  _currentIndex: 0
 --- !u!114 &560750932632706244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12175,7 +12176,7 @@ MonoBehaviour:
   ObstaclesCheckFrequency: 1
   MinimumRandomDirection: {x: -1, y: -1}
   MaximumRandomDirection: {x: 1, y: 1}
---- !u!114 &8553864887714578426
+--- !u!114 &2844687771115873357
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12184,20 +12185,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 4970136436764894812}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1853014c10a6eb46a8363fdc11758e7, type: 3}
+  m_Script: {fileID: 11500000, guid: 4bbbe51f9806750489b5fe08d7a19729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackObjectActiveState: 0
-  trackTransform: 1
-  trackVelocity: 1
-  trackAnimator: 0
-  trackAudio: 0
-  trackParticles:
-    enabled: 0
-    value:
-      particleTrackingLimit: 0
-      particleRestartFrom: 0
-      particleSystems: []
+  RespawnOnPlayerRespawn: 1
+  RepositionToInitOnPlayerRespawn: 1
+  DisableAllComponentsOnKill: 0
+  DisableGameObjectOnKill: 1
+  IgnoreCheckpointsAlwaysRespawn: 1
+  AssociatedCheckpoints: []
+  AutoRespawnDuration: 0
+  AutoRespawnAmount: -1
+  AutoRespawnRemainingAmount: 3
+  RespawnEffect: {fileID: 0}
+  RespawnSfx: {fileID: 0}
 --- !u!1 &5301446886138055161
 GameObject:
   m_ObjectHideFlags: 0
@@ -12941,7 +12942,6 @@ GameObject:
   - component: {fileID: 2608199908139926188}
   - component: {fileID: 2078008729521683134}
   - component: {fileID: 3905853426474021623}
-  - component: {fileID: 7298157204911541330}
   m_Layer: 13
   m_Name: SuitModel
   m_TagString: Untagged
@@ -13010,29 +13010,6 @@ MonoBehaviour:
   AttachLeftHand: 1
   AttachRightHand: 1
   HeadWeights: {x: 0, y: 1}
---- !u!114 &7298157204911541330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5991350921776125223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1853014c10a6eb46a8363fdc11758e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trackObjectActiveState: 0
-  trackTransform: 0
-  trackVelocity: 0
-  trackAnimator: 1
-  trackAudio: 0
-  trackParticles:
-    enabled: 0
-    value:
-      particleTrackingLimit: 0
-      particleRestartFrom: 0
-      particleSystems: []
 --- !u!1 &6425549610075041090
 GameObject:
   m_ObjectHideFlags: 0

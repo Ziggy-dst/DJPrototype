@@ -4919,6 +4919,7 @@ GameObject:
   - component: {fileID: 54994276034465240}
   - component: {fileID: 114331166445830004}
   - component: {fileID: 114386506898602744}
+  - component: {fileID: -655047144967583661}
   m_Layer: 18
   m_Name: GiantSniperRifleBullet
   m_TagString: Untagged
@@ -5173,6 +5174,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PushPower: 300
   PositionOffset: 0
+--- !u!114 &-655047144967583661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854097648223014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6090da511f8374135a15dd8655adcd44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _recordingInterval: 0.5
+  _mode: 1
+  _globalClockKey: Root
+  _rewindable: 1
+  _recordingDuration: 30
 --- !u!1 &1852916741030214175
 GameObject:
   m_ObjectHideFlags: 0

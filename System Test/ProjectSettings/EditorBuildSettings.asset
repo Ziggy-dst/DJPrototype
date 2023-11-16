@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/FeelPrototypeLevel2.unity
     guid: 23e4fbd5b39a8d64aa5968d836d37f59
   - enabled: 1
+    path: Assets/Scenes/FeelPrototypeLevel3.unity
+    guid: e410d8bd3dc87e943b426390bb8bb940
+  - enabled: 1
     path: Assets/TopDownEngine/ThirdParty/MoreMountains/MMTools/Tools/MMSceneLoading/LoadingScreens/LoadingScreen.unity
     guid: 888394d52616e5e42b3b54c3f2bbd3eb
   m_configObjects: {}

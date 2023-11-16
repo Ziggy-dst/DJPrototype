@@ -146,14 +146,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 7354841888744096821}
-    - targetCorrespondingSourceObject: {fileID: 2837498470143396100, guid: cba51772289df50439e1fa1ab24a3d27,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: -6364924939048489004}
-    - targetCorrespondingSourceObject: {fileID: 2838039466158771224, guid: cba51772289df50439e1fa1ab24a3d27,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4798469409419753812}
   m_SourcePrefab: {fileID: 100100000, guid: cba51772289df50439e1fa1ab24a3d27, type: 3}
 --- !u!114 &580511709047592776 stripped
 MonoBehaviour:
@@ -195,55 +187,3 @@ MonoBehaviour:
   ObstaclesCheckFrequency: 1
   MinimumRandomDirection: {x: -1, y: -1}
   MaximumRandomDirection: {x: 1, y: 1}
---- !u!114 &-6364924939048489004
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 692724264497407054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1853014c10a6eb46a8363fdc11758e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trackObjectActiveState: 0
-  trackTransform: 1
-  trackVelocity: 1
-  trackAnimator: 0
-  trackAudio: 0
-  trackParticles:
-    enabled: 0
-    value:
-      particleTrackingLimit: 0
-      particleRestartFrom: 0
-      particleSystems: []
---- !u!1 &693379541034017106 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2838039466158771224, guid: cba51772289df50439e1fa1ab24a3d27,
-    type: 3}
-  m_PrefabInstance: {fileID: 3386105346450124106}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &4798469409419753812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 693379541034017106}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1853014c10a6eb46a8363fdc11758e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trackObjectActiveState: 0
-  trackTransform: 0
-  trackVelocity: 0
-  trackAnimator: 1
-  trackAudio: 0
-  trackParticles:
-    enabled: 0
-    value:
-      particleTrackingLimit: 0
-      particleRestartFrom: 0
-      particleSystems: []

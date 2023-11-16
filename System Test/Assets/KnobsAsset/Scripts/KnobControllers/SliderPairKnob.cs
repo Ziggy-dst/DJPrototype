@@ -92,6 +92,12 @@ namespace KnobsAsset
             SetKnobPosition(initialValue);
         }
 
+        public void SetKnobOnRespawn()
+        {
+            float positionPercentage = AmountMoved / MovementRange;
+            OnValueChanged(positionPercentage);
+        }
+
         protected override void SetKnobPosition(float percentValue)
         {
             AmountMoved = Mathf.Lerp(0f, MovementRange, percentValue);

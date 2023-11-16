@@ -393,7 +393,7 @@ namespace MoreMountains.TopDownEngine
 		/// <summary>
 		/// Initiates the respawn
 		/// </summary>
-		protected virtual void Respawn()
+		public virtual void Respawn()
 		{
 			if (Players.Count < 2)
 			{

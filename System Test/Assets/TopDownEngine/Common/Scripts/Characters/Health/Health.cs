@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using MoreMountains.Tools;
 using MoreMountains.Feedbacks;
+using Chronos;
 
 namespace MoreMountains.TopDownEngine
 {
@@ -498,8 +499,27 @@ namespace MoreMountains.TopDownEngine
 			{
 				if (CurrentHealth <= 0)
 				{
-					CurrentHealth = 0;
-					Kill();
+					if (TryGetComponent<Timeline>(out Timeline timeline))
+					{
+						timeline.Do(
+							true,
+							delegate
+							{
+								CurrentHealth = 0;
+								Kill();
+							},
+							delegate
+							{
+								Revive();
+								CurrentHealth = 1;
+							});
+					}
+					else
+					{
+						CurrentHealth = 0;
+						Kill();
+					}
+					
 				}
 					
 			}

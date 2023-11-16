@@ -78,7 +78,7 @@ namespace MoreMountains.Tools
 		protected Vector3 _initialPositionThisFrame;
 		protected Vector3 _finalPosition;
 		protected Vector3 _previousPoint = Vector3.zero;
-		protected int _currentIndex;
+		public int _currentIndex;
 		protected float _distanceToNextPoint;
 		protected bool _endReached = false;
 
