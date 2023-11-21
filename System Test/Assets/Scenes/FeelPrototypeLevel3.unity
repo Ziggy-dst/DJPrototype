@@ -50534,11 +50534,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6090da511f8374135a15dd8655adcd44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _recordingInterval: 0.5
-  _mode: 1
-  _globalClockKey: Root
-  _rewindable: 1
-  _recordingDuration: 30
 --- !u!114 &913522816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50551,10 +50546,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53b63d8a87a6d242964d9d2be004f8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  variables:
-  - _target: {fileID: 913522816}
-    _component: Health
-    _name: CurrentHealth
 --- !u!114 &913522817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90609,8 +90600,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a10179de595094539a3ca7ba94d6b1c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _debug: 0
-  _maxParticleLoops: 10
 --- !u!114 &1747284132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90623,11 +90612,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0144e3ad8a88947298e2dca62625e6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _localTimeScale: 1
-  _paused: 0
-  _parentKey: 
-  _parentBlend: 0
-  _key: Root
 --- !u!4 &1747894642 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 487350, guid: 13f7a2e2a04268d4f8cee777011fef35,
@@ -130776,7 +130760,7 @@ MonoBehaviour:
     Transitions:
       array:
       - Decision: {fileID: 7354841888078188915}
-        TrueState: Fighting 2
+        TrueState: Fighting 3
         FalseState: 
   - StateName: Cool Down
     Actions:
@@ -130796,6 +130780,15 @@ MonoBehaviour:
       - Decision: {fileID: 0}
         TrueState: 
         FalseState: 
+  - StateName: Fighting 3
+    Actions:
+      array:
+      - {fileID: 580511709461840403}
+    Transitions:
+      array:
+      - Decision: {fileID: 7354841888078188912}
+        TrueState: 
+        FalseState: Idle
   TimeInThisState: 0
   Target: {fileID: 0}
   _lastKnownTargetPosition: {x: 0, y: 0, z: 0}
@@ -144564,7 +144557,7 @@ MonoBehaviour:
   Label: 
   TrueIfHealthIs: 0
   HealthValue: 666
-  OnlyOnce: 1
+  OnlyOnce: 0
 --- !u!114 &7354841888078188917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144580,7 +144573,7 @@ MonoBehaviour:
   Label: 
   TrueIfHealthIs: 0
   HealthValue: 333
-  OnlyOnce: 1
+  OnlyOnce: 0
 --- !u!114 &7354841888078188918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144593,10 +144586,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53b63d8a87a6d242964d9d2be004f8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  variables:
-  - _target: {fileID: 7354841888078188918}
-    _component: Health
-    _name: CurrentHealth
 --- !u!114 &7354841888078188919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144609,11 +144598,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6090da511f8374135a15dd8655adcd44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _recordingInterval: 0.5
-  _mode: 1
-  _globalClockKey: Root
-  _rewindable: 1
-  _recordingDuration: 30
 --- !u!114 &7354841888078188920
 MonoBehaviour:
   m_ObjectHideFlags: 0
