@@ -12075,7 +12075,7 @@ MonoBehaviour:
     m_Bits: 1024
   ScanFrequencyInSeconds: 0.1
   VisibleTargets: []
-  ShouldDrawMesh: 1
+  ShouldDrawMesh: 0
   MeshDensity: 0.2
   EdgePrecision: 3
   EdgeThreshold: 0.5
