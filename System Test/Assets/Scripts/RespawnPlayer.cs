@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,8 @@ public class RespawnPlayer : MonoBehaviour
     public float respawnDelay;
     private float respawnTimer;
     private List<SliderPairKnob> pairedSliders;
+
+    public static Action OnRespawn;
 
     void Start()
     {
@@ -43,6 +46,7 @@ public class RespawnPlayer : MonoBehaviour
         GetComponent<AIBrain>().ResetBrain();
         _levelManager.Respawn();
         Invoke("SetKnob", 0.4f);
+        OnRespawn();
     }
 
     private void SetKnob()

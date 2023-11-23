@@ -7,9 +7,14 @@ using UnityEngine;
 public class ShotGunProjectileDestroyingPlayerBullet : MonoBehaviour
 {
     private List<GameObject> playerBullets;
-    void Start()
+    void OnEnable()
     {
+        RespawnPlayer.OnRespawn += TurnOffBullet;
+    }
 
+    private void OnDisable()
+    {
+        RespawnPlayer.OnRespawn -= TurnOffBullet;
     }
 
     // Update is called once per frame
@@ -26,6 +31,11 @@ public class ShotGunProjectileDestroyingPlayerBullet : MonoBehaviour
                 // gameObject.SetActive(false);
             }
         }
+    }
+
+    private void TurnOffBullet()
+    {
+        gameObject.SetActive(false);
     }
 
     // private void OnTriggerEnter(Collider other)
