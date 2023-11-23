@@ -3533,7 +3533,7 @@ PrefabInstance:
     - target: {fileID: 2805879010305184076, guid: cba51772289df50439e1fa1ab24a3d27,
         type: 3}
       propertyPath: PathElements.Array.data[2].PathElementPosition.x
-      value: -3.65
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 2805879010305184076, guid: cba51772289df50439e1fa1ab24a3d27,
         type: 3}
@@ -3543,7 +3543,7 @@ PrefabInstance:
     - target: {fileID: 2805879010305184076, guid: cba51772289df50439e1fa1ab24a3d27,
         type: 3}
       propertyPath: PathElements.Array.data[3].PathElementPosition.x
-      value: -2.6
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 2805879010305184076, guid: cba51772289df50439e1fa1ab24a3d27,
         type: 3}
@@ -62868,7 +62868,7 @@ MonoBehaviour:
   gameObjectToManipulate: {fileID: 913522713}
   variableTypes: 2
   minValue: 5
-  maxValue: 25
+  maxValue: 15
   RelativeToInitialValue: 0
 --- !u!114 &1102025468
 MonoBehaviour:
@@ -62993,7 +62993,7 @@ Transform:
   m_GameObject: {fileID: 1114551975}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -3.4, y: 40.335392, z: 27.7}
+  m_LocalPosition: {x: -4.36, y: 40.335392, z: 27.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -73220,9 +73220,9 @@ MonoBehaviour:
     Delay: 0
   - PathElementPosition: {x: -3.65, y: 0.05, z: 4.97}
     Delay: 0
-  - PathElementPosition: {x: -3.65, y: 0.05, z: 11.39}
+  - PathElementPosition: {x: -5, y: 0.05, z: 11.39}
     Delay: 0
-  - PathElementPosition: {x: -2.6, y: 0.05, z: 20}
+  - PathElementPosition: {x: -5, y: 0.05, z: 20}
     Delay: 0
   - PathElementPosition: {x: 3.1, y: 0.05, z: 27.97}
     Delay: 0
@@ -121930,7 +121930,7 @@ Transform:
   m_GameObject: {fileID: 1243818282187889}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -13.17, y: 36.055393, z: 16.2}
+  m_LocalPosition: {x: -14.130001, y: 36.055393, z: 16.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -130877,7 +130877,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a21818f4def5bf646bec3d25770336cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Label: 
+  Label: Time In State 2-4
   AfterTimeMin: 2
   AfterTimeMax: 4
 --- !u!114 &580211716071838575
@@ -144467,9 +144467,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a21818f4def5bf646bec3d25770336cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Label: 
-  AfterTimeMin: 3
-  AfterTimeMax: 3
+  Label: Time In State 2
+  AfterTimeMin: 2
+  AfterTimeMax: 2
 --- !u!114 &7354841888078188916
 MonoBehaviour:
   m_ObjectHideFlags: 0
