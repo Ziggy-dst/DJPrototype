@@ -62,7 +62,7 @@ namespace KnobsAsset
 
                         // clamp position to position range
                         AmountMoved = Mathf.Clamp(AmountMoved, 0f, MovementRange);
-                        // pairedKnob.AmountMoved = Mathf.Clamp(-AmountMoved, 0f, pairedKnob.MovementRange);
+                        pairedKnob.AmountMoved = pairedKnob.MovementRange - AmountMoved;
 
                         // set the position of the transform based on position
                         SetPositionBasedOnAmountMoved();
@@ -112,8 +112,8 @@ namespace KnobsAsset
         
         private void SetPairedKnobPositionBasedOnAmountMoved()
         {
-            Vector3 minPosition = (Vector3.forward * MinPosition);
-            pairedKnob.handle.localPosition = -(minPosition + (Vector3.forward * AmountMoved));
+            Vector3 minPosition = (Vector3.forward * pairedKnob.MinPosition);
+            pairedKnob.handle.localPosition = minPosition + (Vector3.forward * pairedKnob.AmountMoved);
         }
 
         private Vector3 PositionOnXAxisClosestToPoint(Vector3 point)

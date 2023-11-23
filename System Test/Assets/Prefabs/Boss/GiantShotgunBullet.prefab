@@ -4920,7 +4920,6 @@ GameObject:
   - component: {fileID: 114852181900910388}
   - component: {fileID: 114542905634708538}
   - component: {fileID: 8833025898836625391}
-  - component: {fileID: 749374512241381509}
   m_Layer: 18
   m_Name: GiantShotgunBullet
   m_TagString: Untagged
@@ -5155,7 +5154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObstaclesLayerMask:
     serializedVersion: 2
-    m_Bits: 11520
+    m_Bits: 11264
   SkinWidth: 0.1
   RepositionRigidbody: 1
   RepositionRigidbodyLayerMask:
@@ -5187,23 +5186,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baeca94f1ea34484fad3103e4a75397c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &749374512241381509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1854097648223014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6090da511f8374135a15dd8655adcd44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _recordingInterval: 0.5
-  _mode: 1
-  _globalClockKey: Root
-  _rewindable: 1
-  _recordingDuration: 30
 --- !u!1 &816670259895701369
 GameObject:
   m_ObjectHideFlags: 0

@@ -4985,7 +4985,7 @@ MonoBehaviour:
   ExecuteOnDisable:
     m_PersistentCalls:
       m_Calls: []
-  LifeTime: 2
+  LifeTime: 0.25
   FaceDirection: 1
   FaceMovement: 0
   MovementVector: 0

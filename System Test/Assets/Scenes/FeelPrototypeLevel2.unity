@@ -3714,7 +3714,7 @@ PrefabInstance:
     - target: {fileID: 2805879010305184076, guid: cba51772289df50439e1fa1ab24a3d27,
         type: 3}
       propertyPath: MinDistanceToGoal
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2805879010305184076, guid: cba51772289df50439e1fa1ab24a3d27,
         type: 3}
@@ -16755,7 +16755,7 @@ MonoBehaviour:
     Delay: 0
   ReferenceMMPath: {fileID: 0}
   AbsoluteReferencePath: 0
-  MinDistanceToGoal: 0.5
+  MinDistanceToGoal: 1
   LockHandlesOnXAxis: 0
   LockHandlesOnYAxis: 0
   LockHandlesOnZAxis: 0
@@ -91013,8 +91013,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a10179de595094539a3ca7ba94d6b1c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _debug: 0
-  _maxParticleLoops: 10
 --- !u!114 &1747284132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91027,11 +91025,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0144e3ad8a88947298e2dca62625e6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _localTimeScale: 1
-  _paused: 0
-  _parentKey: 
-  _parentBlend: 0
-  _key: Root
 --- !u!4 &1747894642 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 487350, guid: 13f7a2e2a04268d4f8cee777011fef35,

@@ -31,7 +31,6 @@ public class RespawnPlayer : MonoBehaviour
             if (respawnTimer <= 0)
             {
                 RespawnReset();
-                Invoke("SetKnob", 0.4f);
                 respawnTimer = respawnDelay;
             }
         }
@@ -43,6 +42,7 @@ public class RespawnPlayer : MonoBehaviour
         GetComponent<AIActionMovePatrol3D>().ResetPatrol(transform.position);
         GetComponent<AIBrain>().ResetBrain();
         _levelManager.Respawn();
+        Invoke("SetKnob", 0.4f);
     }
 
     private void SetKnob()

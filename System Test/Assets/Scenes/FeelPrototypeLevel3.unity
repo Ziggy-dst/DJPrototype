@@ -3703,7 +3703,7 @@ PrefabInstance:
     - target: {fileID: 2806099876584734844, guid: cba51772289df50439e1fa1ab24a3d27,
         type: 3}
       propertyPath: States.Array.data[2].StateName
-      value: Time Rewind Do Nothing
+      value: Destroying
       objectReference: {fileID: 0}
     - target: {fileID: 2806099876584734844, guid: cba51772289df50439e1fa1ab24a3d27,
         type: 3}
@@ -3744,7 +3744,7 @@ PrefabInstance:
         type: 3}
       propertyPath: States.Array.data[2].Actions.array.Array.data[0]
       value: 
-      objectReference: {fileID: 913522802}
+      objectReference: {fileID: 913522726}
     - target: {fileID: 2806099876584734844, guid: cba51772289df50439e1fa1ab24a3d27,
         type: 3}
       propertyPath: States.Array.data[2].Actions.array.Array.data[1]
@@ -3799,7 +3799,7 @@ PrefabInstance:
         type: 3}
       propertyPath: States.Array.data[2].Transitions.array.Array.data[0].Decision
       value: 
-      objectReference: {fileID: 913522796}
+      objectReference: {fileID: 913522717}
     - target: {fileID: 2806099876584734844, guid: cba51772289df50439e1fa1ab24a3d27,
         type: 3}
       propertyPath: States.Array.data[3].Transitions.array.Array.data[0].Decision
@@ -3843,7 +3843,7 @@ PrefabInstance:
     - target: {fileID: 2806099876584734844, guid: cba51772289df50439e1fa1ab24a3d27,
         type: 3}
       propertyPath: States.Array.data[2].Transitions.array.Array.data[0].FalseState
-      value: 
+      value: Patrolling
       objectReference: {fileID: 0}
     - target: {fileID: 2806099876584734844, guid: cba51772289df50439e1fa1ab24a3d27,
         type: 3}
@@ -4242,18 +4242,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 913522794}
-    - targetCorrespondingSourceObject: {fileID: 2837498470143396100, guid: cba51772289df50439e1fa1ab24a3d27,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 913522815}
-    - targetCorrespondingSourceObject: {fileID: 2837498470143396100, guid: cba51772289df50439e1fa1ab24a3d27,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 913522816}
-    - targetCorrespondingSourceObject: {fileID: 2837498470143396100, guid: cba51772289df50439e1fa1ab24a3d27,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 913522817}
     - targetCorrespondingSourceObject: {fileID: 2837498470143396100, guid: cba51772289df50439e1fa1ab24a3d27,
         type: 3}
       insertIndex: -1
@@ -50498,66 +50486,6 @@ MonoBehaviour:
   ObstaclesCheckFrequency: 0.2
   MinimumRandomDirection: {x: -0.5, y: -0.5}
   MaximumRandomDirection: {x: 0.5, y: 0.5}
---- !u!114 &913522796 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2837498470143396101, guid: cba51772289df50439e1fa1ab24a3d27,
-    type: 3}
-  m_PrefabInstance: {fileID: 207186520}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 913522713}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78c77c71de934d5409ac7258ff688672, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &913522802 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2806688091329080766, guid: cba51772289df50439e1fa1ab24a3d27,
-    type: 3}
-  m_PrefabInstance: {fileID: 207186520}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 913522713}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 561ab803e1e9aa94ab096724696e5475, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &913522815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 913522713}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6090da511f8374135a15dd8655adcd44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &913522816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 913522713}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b53b63d8a87a6d242964d9d2be004f8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &913522817
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 913522713}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd27ea64193b7284c96792ef6f975544, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &913522818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84125,7 +84053,7 @@ MonoBehaviour:
   gameObjectToManipulate: {fileID: 913522713}
   variableTypes: 4
   minValue: 1
-  maxValue: 0.05
+  maxValue: 0.075
   RelativeToInitialValue: 0
 --- !u!114 &1648444582
 MonoBehaviour:
@@ -130841,7 +130769,7 @@ MonoBehaviour:
   ImmuneToKnockbackIfZeroDamage: 1
   KnockbackForceMultiplier: 1
   DestroyOnDeath: 1
-  DelayBeforeDestruction: 3
+  DelayBeforeDestruction: 0
   PointsWhenDestroyed: 0
   RespawnAtInitialLocation: 0
   DisableControllerOnDeath: 1
@@ -144625,7 +144553,7 @@ MonoBehaviour:
   RespawnOnPlayerRespawn: 1
   RepositionToInitOnPlayerRespawn: 1
   DisableAllComponentsOnKill: 0
-  DisableGameObjectOnKill: 1
+  DisableGameObjectOnKill: 0
   IgnoreCheckpointsAlwaysRespawn: 1
   AssociatedCheckpoints: []
   AutoRespawnDuration: 0

@@ -1003,7 +1003,7 @@ MonoBehaviour:
   SpawnTransformsMode: 1
   Spread: {x: 0, y: 0, z: 0}
   RotateWeaponOnSpread: 0
-  RandomSpread: 1
+  RandomSpread: 0
   SpawnPosition: {x: 0, y: 0.16, z: 0.57}
   ObjectPooler: {fileID: 0}
   SpawnFeedbacks: []

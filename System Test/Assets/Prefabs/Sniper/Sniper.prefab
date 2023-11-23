@@ -11791,7 +11791,7 @@ MonoBehaviour:
   DestroyOnDeath: 0
   DelayBeforeDestruction: 0
   PointsWhenDestroyed: 0
-  RespawnAtInitialLocation: 0
+  RespawnAtInitialLocation: 1
   DisableControllerOnDeath: 1
   DisableModelOnDeath: 1
   DisableCollisionsOnDeath: 1
@@ -12191,7 +12191,7 @@ MonoBehaviour:
   RespawnOnPlayerRespawn: 1
   RepositionToInitOnPlayerRespawn: 1
   DisableAllComponentsOnKill: 0
-  DisableGameObjectOnKill: 1
+  DisableGameObjectOnKill: 0
   IgnoreCheckpointsAlwaysRespawn: 1
   AssociatedCheckpoints: []
   AutoRespawnDuration: 0

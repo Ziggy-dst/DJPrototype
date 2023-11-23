@@ -29,9 +29,6 @@ GameObject:
   - component: {fileID: 7143298723401358594}
   - component: {fileID: -9132198898158882462}
   - component: {fileID: 3014526449184157077}
-  - component: {fileID: 934160743795226792}
-  - component: {fileID: -3244739854437957903}
-  - component: {fileID: 1993554405724477495}
   - component: {fileID: 8365418831789260852}
   m_Layer: 13
   m_Name: SpeederStatic
@@ -843,51 +840,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: 
---- !u!114 &934160743795226792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177086304818058582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6090da511f8374135a15dd8655adcd44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _recordingInterval: 0.5
-  _mode: 1
-  _globalClockKey: Root
-  _rewindable: 1
-  _recordingDuration: 30
---- !u!114 &-3244739854437957903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177086304818058582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b53b63d8a87a6d242964d9d2be004f8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  variables:
-  - _target: {fileID: -3244739854437957903}
-    _component: Health
-    _name: CurrentHealth
---- !u!114 &1993554405724477495
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177086304818058582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd27ea64193b7284c96792ef6f975544, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &8365418831789260852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -903,7 +855,7 @@ MonoBehaviour:
   RespawnOnPlayerRespawn: 1
   RepositionToInitOnPlayerRespawn: 1
   DisableAllComponentsOnKill: 0
-  DisableGameObjectOnKill: 1
+  DisableGameObjectOnKill: 0
   IgnoreCheckpointsAlwaysRespawn: 1
   AssociatedCheckpoints: []
   AutoRespawnDuration: 0
