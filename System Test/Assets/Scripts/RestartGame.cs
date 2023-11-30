@@ -10,6 +10,8 @@ public class RestartGame : MonoBehaviour
     void Update()
     {
         Restart();
+        SelectLevel();
+        PauseGame();
     }
 
     private void Restart()
@@ -18,5 +20,39 @@ public class RestartGame : MonoBehaviour
         {
             FindObjectOfType<RespawnPlayer>().RespawnReset();
         }
+    }
+
+    private void SelectLevel()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            SceneManager.LoadScene(0);
+        }
+        
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            SceneManager.LoadScene(1);
+        }
+        
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            SceneManager.LoadScene(2);
+        }
+    }
+
+    private void PauseGame()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (!GameManager.Instance.Paused)
+            {
+                GameManager.Instance.Pause();
+            }
+            else
+            {
+                GameManager.Instance.UnPause();
+            }
+        }
+        
     }
 }
