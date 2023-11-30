@@ -27,16 +27,19 @@ public class RestartGame : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             SceneManager.LoadScene(0);
+            if (GameManager.Instance.Paused) GameManager.Instance.UnPause();
         }
         
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             SceneManager.LoadScene(1);
+            if (GameManager.Instance.Paused) GameManager.Instance.UnPause();
         }
         
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             SceneManager.LoadScene(2);
+            if (GameManager.Instance.Paused) GameManager.Instance.UnPause();
         }
     }
 
